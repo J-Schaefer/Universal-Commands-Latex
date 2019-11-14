@@ -8,7 +8,7 @@ For now there are only german commands but english ones are coming soon.
 For using these commands just put
 
 ```tex
-\include{path/to/the/repo/universal-commands-[lang].tex}
+\include{path/to/the/repo/universal-commands-[lang]}
 ```
 
 into your master file.
