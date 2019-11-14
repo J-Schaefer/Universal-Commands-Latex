@@ -5,7 +5,7 @@ For now there are only german commands but english ones are coming soon.
 
 ## Usage
 
-For using these commands just put
+To use these commands just put
 
 ```tex
 \include{path/to/the/repo/universal-commands-[lang]}
