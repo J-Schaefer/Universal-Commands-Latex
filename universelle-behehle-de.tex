@@ -1,0 +1,41 @@
+%%% Deklaration universeller Befehle und Deklarationen
+
+\DeclareUnicodeCharacter{00B4}{`}
+
+%%% Neue Referenzen %%%
+\newcommand{\figref}[1]{Abb.~\ref{#1}}					% Ausgabe: Abb. 1 (bei Subgrafik wird ausgegeben: Abb. 2a)
+\newcommand{\subfigref}[1]{Abb.~\subref{#1}}			% Ausgabe: Abb. a (referenziert nur die Subgrafik, ohne Nennung der Supergrafik)
+\newcommand{\tabref}[1]{Tab.~\ref{#1}}					% Ausgabe: Tab. 1
+\newcommand{\chpref}[1]{Kapitel~\ref{#1}}				% Ausgabe: Kapitel 1
+\newcommand{\secref}[1]{Abschnitt~\ref{#1}}				% Ausgabe: Abschnitt 1
+\newcommand{\subsecref}[1]{Abschnitt~\ref{#1}}			% Ausgabe: Abschnitt 1
+\newcommand{\listref}[1]{Quellcode~\ref{#1}}			% Ausgabe: Quellcode 1
+\newcommand{\listlineref}[2]{Quellcode~\ref{#1}, #2}	% Ausgabe: Quellcode 1, Zeile 2 (wenn Argument 2 'Zeile 2' ist)
+\renewcommand{\eqref}[1]{Formel~\ref{#1}}				% Ausgabe: Formel 1
+
+%% Links
+\newcommand{\mailto}[1]{\href{mailto:#1}{#1}}
+
+% typografische Feinheiten
+\newcommand{\zb}{\mbox{z.\,B.}\xspace}					% Ausgabe: z. B. (mit kleinem Abstand und keiner Silben-/Worttrennung)
+\newcommand{\dahe}{\mbox{d.\,h.}\xspace}				% Ausgabe: d. h. (mit kleinem Abstand und keiner Silben-/Worttrennung)
+\newcommand{\page}[1]{\mbox{S.\,#1}}
+
+\newcommand{\elq}{`}
+\newcommand{\erq}{'}
+\newcommand{\elqq}{``}
+\newcommand{\erqq}{''}
+
+\newcommand{\skipline}{\vspace{\baselineskip}} % leave a free line
+
+% kleineres Minus-Zeichen
+\newcommand{\n}{\raisebox{.75pt}{-}}
+\newcommand{\bis}{\!-\!}
+
+% Mathematische Angabe der Zehnerpotenz, z. B.: 1E-2
+\newcommand{\expneg}[2]{#1\mbox{\scshape{e}-}#2}				% Ausgabe: 1E-2 (mit verkleinertem E)
+\newcommand{\exppos}[2]{#1\mbox{\scshape{e}}#2}				% Ausgabe: 1E2 (mit verkleinertem E)
+
+% Symbole
+% Schönere Schreibweise des Symbols für C++
+\newcommand{\CC}{C\nolinebreak\hspace{-.05em}\raisebox{.4ex}{\tiny\bf +}\nolinebreak\hspace{-.10em}\raisebox{.4ex}{\tiny\bf +}}
