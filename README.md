@@ -1,7 +1,7 @@
 # Universal Commands for LaTeX
 
 This repository contains some commands that can be included in a LaTeX document for ease of use.
-For now there are only german commands but english ones are coming soon.
+There is a german and an english version.
 
 ## Usage
 

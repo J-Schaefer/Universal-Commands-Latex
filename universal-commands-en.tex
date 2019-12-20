@@ -1,0 +1,41 @@
+%%% Declaration of universal commands
+
+\DeclareUnicodeCharacter{00B4}{`}
+
+%%% References %%%
+\newcommand{\figref}[1]{Fig.~\ref{#1}}              % Output: Fig. 1 (bei Subgrafik wird ausgegeben: Abb. 2a)
+\newcommand{\subfigref}[1]{Fig.~\subref{#1}}        % Output: Fig. a (referenziert nur die Subgrafik, ohne Nennung der Supergrafik)
+\newcommand{\tabref}[1]{Tab.~\ref{#1}}              % Output: Tab. 1
+\newcommand{\chpref}[1]{chapter~\ref{#1}}           % Output: chapter 1
+\newcommand{\secref}[1]{section~\ref{#1}}           % Output: section 1
+\newcommand{\subsecref}[1]{section~\ref{#1}}        % Output: section 1
+\newcommand{\listref}[1]{code~\ref{#1}}             % Output: code 1
+\newcommand{\listlineref}[2]{code~\ref{#1}, #2}     % Output: code 1, Zeile 2 (wenn Argument 2 'Zeile 2' ist)
+\renewcommand{\eqref}[1]{Eq.~\ref{#1}}              % Output: Eq. 1
+
+%% Links
+\newcommand{\mailto}[1]{\href{mailto:#1}{#1}}
+
+% typografische Feinheiten
+\newcommand{\eg}{\mbox{e.\,g.}\xspace}				% Output: e. g. (with small space and no hyphenation)
+\newcommand{\page}[1]{\mbox{p.\,#1}}                % Output: p. 1
+\newcommand{\pages}[1]{\mbox{pp.\,#1}}              % Output: pp. 1
+
+\newcommand{\elq}{`}
+\newcommand{\erq}{'}
+\newcommand{\elqq}{``}
+\newcommand{\erqq}{''}
+
+\newcommand{\skipline}{\vspace{\baselineskip}} % leave a free line
+
+% Smaller Minus Sign
+\newcommand{\n}{\raisebox{.75pt}{-}}
+\newcommand{\minus}{\!-\!}
+
+% Mathematical spelling of decimal power , i. g.: 1E-2
+\newcommand{\expneg}[2]{#1\mbox{\scshape{e}-}#2}    % Output: 1E-2 (with small capital E)
+\newcommand{\exppos}[2]{#1\mbox{\scshape{e}}#2}     % Output: 1E2 (with small capital E)
+
+% Symbols
+% Nicer spelling of "C++"
+\newcommand{\CC}{C\nolinebreak\hspace{-.05em}\raisebox{.4ex}{\tiny\bf +}\nolinebreak\hspace{-.10em}\raisebox{.4ex}{\tiny\bf +}}
